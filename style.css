@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s linear;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  background-color: #c2683f;
+  color: white;
+  box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}   
+html::-webkit-scrollbar {
+  width: 1.2rem;
+}
+html::-webkit-scrollbar-thumb {
+  background: lightgreen;
+}
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+
+header {
+  position: fixed;
+  width: 35rem;
+  height: 100%;
+  background-color: hsl(86, 85%, 50%);
+  color: white;
+  transition: all 0.4s linear;
+}
+#menu {
+  position: fixed;
+  padding: 1.5rem;
+  font-size: 2rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #333;
+  color: white;
+  display: none;
+  
+}
+section {
+  min-height: 100vh;
+  margin-left: 25%;
+  width: 75%;
+  box-sizing: border-box;
+}
+
+header .image {
+  text-align: center;
+  margin-top: 5rem;
+}
+header .image img {
+  border: 0.7rem solid lightgreen;
+  border-radius: 100px;
+}
+header .image h1,
+h3 {
+  padding-top: 1rem;
+}
+
+header ul {
+  list-style: none;
+  margin-top: 0px;
+  text-align: center;
+  padding: 5rem;
+}
+header ul li a {
+  display: block;
+  background-color: #333;
+  padding: 1.5rem;
+  border-radius: 5rem;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+span {
+  color: lightgreen;
+}
+a:hover {
+  background-color: lightgreen;
+}
+.home {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.home .home-info {
+  font-size: 2.2rem;
+  color: white;
+  position: relative;
+  top: 22rem;
+  left: 20rem;
+  height: 50rem;
+  width: 70%;
+}
+.home .home-info h4 {
+  padding-bottom: 1rem;
+}
+.home .home-info h1 {
+  font-size: 4.5rem;
+}
+.home .home-info a {
+  background-color: #333;
+  padding: 0.5rem 2.5rem;
+  border-radius: 5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.home .home-info a:hover {
+  background-color: lightgreen;
+}
+.home .home-info div {
+  margin-top: 4rem;
+  height: 6rem;
+}
+.heading {
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2.2rem;
+  color: white;
+}
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+  justify-content: center;
+  width: 100%;
+  height: 50rem;
+}
+
+.about .row .about-detail {
+  overflow-y: hidden;
+  padding-left: 5rem;
+  margin-top: 5rem;
+  width: 40%;
+  height: 29rem;
+  font-size: 1.8rem;
+}
+.about .row .about-detail h3 {
+  padding-bottom: 2rem;
+}
+.about .row .about-detail span {
+  padding-right: 0.7rem;
+}
+.about .row .about-box .box h1 {
+  padding-bottom: 1rem;
+}
+.about .row .about-box {
+  display: flex;
+  padding-top: 5rem;
+  justify-content: left;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 30rem;
+}
+.about .row .about-box .box {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  width: 37%;
+  height: 13rem;
+  background-color: #333;
+}
+.education .education-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80vh;
+}
+.education .education-container .education-box {
+  
+  border-left: 0.2rem solid white;
+  width: 27%;
+  font-size: 1.3rem;
+  padding: 0rem 2rem;
+  margin: 3rem 1rem;
+  height: 17rem;
+  overflow: hidden;
+}
+.education .education-container .education-box i {
+  position: absolute;
+  background-color: lightgreen;
+  padding: 1.2rem;
+  left: 36.8rem;
+  border-radius: 10rem;
+}
+.education .education-container .education-box span {
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  background-color: #333;
+  border-radius: 5rem;
+}
+.portfolio .portfolio-image {
+  display: flex;
+  margin-top: 7rem;
+  flex-wrap: wrap;
+  height: 70vh;
+  width: 100%;
+}
+.portfolio .portfolio-image .portfolio-img {
+  height: 40%;
+  margin-top: 3rem;
+  width: 25%;
+  padding-left: 8rem;
+}
+.portfolio .portfolio-image .portfolio-img img {
+  border-radius: 3rem;
+}
+.portfolio .portfolio-image .portfolio-img:hover {
+  transform: scale(1.1);
+}
+.contact .contect-info {
+  display: flex;
+  flex-wrap: wrap;
+  height: 65rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contect-info .contact-container {
+  height: 50rem;
+  width: 40%;
+  font-size: 2.5rem;
+}
+.contact .contect-info .contact-container h5,
+h2 {
+  padding: 1.8rem;
+}
+.contact .contect-info .contact-container h5 i {
+  color: lightgreen;
+}
+.contact .contect-info .mail-me {
+  height: 50rem;
+  width: 40%;
+}
+.contact .contect-info .mail-me input,
+textarea {
+  background-color: #333;
+  border: none;
+  padding: 1.5rem 0rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  color: white;
+}
+.contact .contect-info .mail-me textarea {
+  margin-bottom: 2.5rem;
+}
+.contact .contect-info .mail-me a {
+  border-radius: 5rem;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 1rem 3rem;
+}
+.contact .contect-info .mail-me a:hover {
+  background-color: lightgreen;
+}
+
+
+
+
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+  header{
+      left:-120%;
+  }
+  html{
+    font-size: 65%;
+  }
+  .portfolio{
+    font-size: 55%;
+  }
+  .home{
+    padding:0px;
+  }
+  #menu{
+      display:block;
+      position: fixed;
+  
+  }
+
+  header.toggle{
+   left:0%;
+  }
+  body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 97vw;
+  }
+
+  section{
+      margin-left: 0px;
+      padding: 1rem 4rem 1rem 4rem;
+      width: 90vw;
+  }
+  .portfolio .portfolio-image .portfolio-img {
+    height: 20rem;
+    width: 20rem;
+    padding-left: 8rem;
+  }
+  .contact .contect-info{
+    width: 86rem;
+    justify-content: left;
+  }
+  .active  {
+    
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    width: 35rem;
+    height: 100%;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  @media  (max-width:768px) {
+     html{
+      font-size: 50%;
+     }
+  }
+  @media(max-width:415px){
+    .heading {
+      width: 100vw;
+    }
+    .heading h1{
+      padding-right:10rem ;
+    }
+    .home .home-info{
+     left: 10rem;
+     height: 55rem;
+     width: 35rem;
+    }
+    .about .row{
+      height: 80vh;
+      width: 100vw;
+      justify-content: left;
+    }
+    .about .row  .about-detail {
+      width: 40rem;
+    }
+    .about .row  .about-box {
+      width: 40rem;
+    }
+    .education .education-container .education-box{
+      width:32rem;
+    }
+    .portfolio .portfolio-image{
+      height: 80vh;
+    }
+    .portfolio .portfolio-image .portfolio-img{
+      height: 20rem;
+      width: 20rem;
+      padding-top: 3rem;
+      padding-left: 10rem;
+     
+    } 
+    .contact .contect-info{
+       height: 85vh;
+    }
+    .contact .contect-info .contact-container{
+      width: 48rem;
+      height: 41rem;
+    }
+    .contact .contect-info .mail-me{
+      width: 48rem;
+      height: 45rem;
+    }
+}  
+}
